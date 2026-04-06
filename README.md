@@ -30,7 +30,8 @@ This is a tool that performs camera calibration and corrects lens distortion usi
 ### 2. 왜곡 보정 결과 (Original vs Undistorted)
 좌측의 왜곡된 원본 영상(`Original`)과 우측의 기하학적 왜곡이 펴진 보정 영상(`Undistorted`)을 나란히 비교한 데모입니다.
 
-https://github.com/user-attachments/assets/020f8424-476f-4014-a1f7-11c5ea4d0e97
+![demo_result](https://github.com/user-attachments/assets/379afdf5-fd4b-427c-b911-f32a05c323f5)
+
 
 ---
 
