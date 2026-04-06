@@ -49,7 +49,21 @@ This is a tool that performs camera calibration and corrects lens distortion usi
 ## 🚀 실행 방법 (How to Run)
 1. 본 저장소를 Clone 하거나 파일을 다운로드합니다.
 2. 터미널(또는 명령 프롬프트)에서 해당 폴더로 이동한 후 아래 명령어들을 순차적으로 실행합니다.
-
+3. 캘리브레이션을 위한 영상과 코드는 반드시 같은 폴더 내에 위치하여야 하며,
+   영상의 파일명은 반드시 'chessboard.mp4'이어야 합니다.
+   
 **Step 1: 카메라 캘리브레이션 연산**
 ```bash
 python camera_calibration.py
+
+```
+4. 캘리브레이션되어, npz 파일이 폴더에 저장됩니다.
+
+5. **Step 2: 원본과 보정된 영상 비교**
+```bash
+python distortion_correction.py
+
+```
+6. 동영상 창이 활성화된 상태에서 키보드 s 또는 S를 누르면, 현재의 프레임이 현재 시각과 함께 저장됩니다.
+   기본적으로 동영상은 demo_result.mp4라는 이름으로 저장됩니다.
+   'q'를 눌러 영상재생을 멈출 수 있습니다.
